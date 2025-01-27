@@ -47,7 +47,7 @@ function onUpdate(id) {
   }
 
   if (inputContent.value == "" || inputLimit.value == "") {
-    errMsg = "タスク・期限を両方入力してください。"
+    errMsg.value = "タスク・期限を両方入力してください。"
     isErrMsg.value = true
     return
   }
@@ -59,7 +59,7 @@ function onUpdate(id) {
 function showModal(id) {
   isShowModal.value = true;
   deleteItemId = id;
-  deleteItemContent = items.value[id].content
+  deleteItemContent.value = items.value[id].content
 }
 
 function onDeleteItem() {
